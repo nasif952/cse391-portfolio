@@ -1,0 +1,91 @@
+/*____________ GENERAL ____________ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth; 
+    /* will scroll down smoothly */
+}
+
+
+
+p{
+    color: rgb(85,85,85);
+}
+
+/* ____________TRANSITION____________ */
+
+/* .btn > for button */
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+/* ____________Desktop Navigation____________ */
+
+nav, .nav-links{
+    display: flex;
+    /* flexes navigation */
+} 
+
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    /* defines the percentage of screen view height will allocate */
+
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    /* removes bullet points */
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    /* removes underline from text */
+    text-decoration-color: white;
+}
+
+a:hover {
+    /* what happens when mouse reaches the link portions */
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+
+.logo {
+    font-size:  2rem;
+}
+
+.logo:hover{
+    cursor: default;
+
+}
+
+
+/* ____________Hamburger Menu____________ */
+
+#hamburger-nav {
+    display: none;
+  }

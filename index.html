@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/6e8626b1aa.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nasif Ahmed Nafi</div>  <!-- name as a logo -->
+        
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+                    <!-- will lead to each section by # -->
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nasif Ahmed Nafi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets\nasif_dp1.png" alt='Nasif Ahmed Nafi profile picture' />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Nasif Ahmed Nafi</h1>
+            <p class="section__text__p2">Student</p>
+        
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+            </button>
+            <button 
+            class="btn btn-color-1" onclick="location.href='./#contact'" >Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img 
+            src="./assets/linkedin.png" 
+            alt="Linkedin Profile" 
+            class="icon" 
+            onclick ="location.href='https://www.linkedin.com/in/nasif-ahmed-66a533211/'">
+            <img 
+            src="./assets/github.png" 
+            alt="Github Profile" 
+            class="icon" 
+            onclick ="location.href='https://github.com/nasif952'">
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <br>
+            <div class="section__pic-container">
+              <img
+                src="./assets/about-pic.png"
+                alt="Profile picture"
+                class="about-pic"
+              />
+            </div>
+            
+            <div class="about-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                    <img
+                    src="./assets/experience.png"
+                    alt="Experience Icon"
+                    class="icon"
+                    />
+                    <h2>Experience</h2><hr>
+                    
+                    <div class="experience-container">
+                        <div class="experience-item">
+                            <span class="experience-duration">4+ years</span>
+                            <span class="experience-title">PC Builder</span>
+                        </div>
+                
+                        <div class="experience-item">
+                            <span class="experience-duration">3+ years</span>
+                            <span class="experience-title">Student Tutor</span>
+                        </div>
+                
+                        <div class="experience-item">
+                            <span class="experience-duration">4+ years</span>
+                            <span class="experience-title">Eshop Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div >
+                    <div class="details-container">
+                    <img src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+                    />
+                    
+                    
+                    <h1 style="font-size: 29px;">Education</h1> <hr>
+                    
+                    <br>
+                    <table >
+                        <tr>
+                          <th>Degree</th>
+                          <th>Institution</th>
+                          <th>Gpa</th>
+                          <th>Board</th>
+                          <th>Passing Year</th>
+                        </tr>
+                        <tr>
+                          <td>HSC</td>
+                          <td>Mirpur Cantonment Public College</td>
+                          <td>5.00</td>
+                          <td>Dhaka</td>
+                          <td>2020</td>
+                        </tr>
+                        <tr>
+                          <td>SSC</td>
+                          <td>Mirpur Cantonment Public School</td>
+                          <td>5.00</td>
+                          <td>Dhaka</td>
+                          <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td>JSC</td>
+                            <td>Mirpur Cantonment Public School </td>
+                            <td>5.00  </td>
+                            <td>Dhaka  </td>
+                            <td>2016</td>
+                          </tr>
+                        <tr>
+                            <td>PSC</td>
+                            <td>BPATC School </td>
+                            <td>5.00</td>
+                            <td>Dhaka</td>
+                            <td>2013</td>
+                        </tr>
+                      </table>
+                    </div>
+                    </div>
+        </div>
+        <div class="text-container">
+            <p> </p>
+        </div>
+        </div>
+        
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#hobbies' " 
+        />
+    </section>
+    <section id="hobbies">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Hobbies</h1>
+        <div class="hobbies-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <p class="hobbies-sub-title">A hobby a day keeps the doldrums away <span class="author-subscript">– Phyllis McGinley</span></p>
+            <div class="article-container">
+                <article>
+                    <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="hobb_h3">Gaming</h3>
+                  <p>Console gaming is a peace.</p>
+                  <p><a href="#favorites-section" class="link_line">Wanna know my favorites?</a></p>
+
+                </div>
+                </article>
+                <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="hobb_h3">Singing</h3>
+                <p>I love new songs</p>
+              </div>
+            </article>
+            <!-- ............................................ -->
+            <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="hobb_h3">Guitar Playing</h3>
+                  <p>6 strings and miracle happens</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="hobb_h3">Traveling</h3>
+                  <p>No tour , no semester break</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="hobb_h3">Sports</h3>
+                  <p>Football or Cricket?I say both</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="hobb_h3">Photography</h3>
+                  <p>Camera can't make you lonely </p>
+                </div>
+            
+
+              </article>
+            </div>
+            </div>  
+            
+                 
+          
+        </section>
+
+        <section id="favorites-section" class="favorite-list">
+            <p class="section__text__p1">most favorite</p>
+        <h1 class="title_game">Video Games</h1>
+            
+            
+            <!-- Game 1 -->
+            <div class="game_flex1">
+            <div class="game_flex2">
+              <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2" class="game_img">
+              <p>Red Dead Redemption 2</p>
+            
+            </div>
+            <!-- Game 2 -->
+            <div class="game_flex2">
+              <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30dd8syYR9JAPhV759qTQe/66e1f4978d8a6ff11201bc1c6dd7b7f9/acm-boxshot.jpg" alt="Assassin's Creed" class="game_img">
+              <p>Assassin's Creed</p>
+              
+            </div>
+            <!-- Game 3 -->
+            <div class="game_flex2">
+              <img src="https://m.media-amazon.com/images/M/MV5BOTE4NmVjMWItMWQzMy00MDQ5LTk3ZWMtNTRhNDllNjdiMDA1XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" alt="Final Fantasy" class="game_img">
+              <p>Final Fantasy</p>
+            </div>
+            
+         
+        </div>
+        <div class="fav__list">
+            <ul>
+                <h1>Recommended Titles To Try </h1><hr>
+                <li>Detroit Become Human</li>
+                <li>Resident Evil </li>
+                <li>Plague Tale Innocence </li>
+                <li>Mafia Definitive Edition </li>
+                <li>Alan Wake 2 </li>
+                <li>Spider Man 2 </li>
+
+
+            </ul>
+         
+        <iframe class="youtube_link" width=50% height=300px src="https://www.youtube.com/embed/eaW0tYpxyp0?si=5V7eFH4A47XwYPi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div></section>
+        <br><br>
+<!-- --------contact------------ -->
+<section id="contact">
+<div class="Contact_f">
+    <div class="Contact_container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="hobbies-sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>nasif.ahmed95@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>01757458800</p>
+                <div class="social-icons">
+                    <a href="https://www.bracu.ac.bd/"  ><img src="assets\bu.png"class='icon'></a>
+                    <a href="https://www.facebook.com/nasifahmednongor/"  ><img src="assets\fb.png"class='icon'></a>
+                   <br>
+                   
+                    
+
+                </div>
+            </div>
+              
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Mail" required>
+                    <textarea  name="Message"  rows="6" placeholder="your Message" required></textarea>
+                    <button type="submit" class="btn btn-color-1">Submit</button>
+                </form>
+                
+                <span id="msg">Hello</span>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+    
+
+
+
+            
+
+
+
+
+
+    
+
+    
+
+
+    
+    
+
+    <div class="footer">
+        
+        
+        <p>Design by : Nasif Ahmed Nafi © My webpage.<br></p>
+        <p>References:<br> <a href="https://www.youtube.com/watch?v=ldwlOzRvYOU" target="_blank">How to Become a Developer</a>
+        <p><a href="https://www.youtube.com/watch?v=0YFrGy_mzjY&ab_channel=GreatStack" target="_blank">GreatStack</a>
+        <p><a href="https://www.w3schools.com/" target="_blank">w3schools</a></p>
+      </div>
+      <script src="script.js"></script>
+
+      
+
+</body>
+</html>
